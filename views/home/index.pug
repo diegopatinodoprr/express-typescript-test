@@ -1,3 +1,4 @@
+// https://pugjs.org/api/getting-started.html
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -6,4 +7,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
     body
-        h1= "Hello World"
+        a(href="https://pugjs.org")
+            img(src="https://opencollective.com/pug/sponsor/1/avatar.svg")
+        each user, index in users
+            h2(onclick=`alert(${index})`)= user.name

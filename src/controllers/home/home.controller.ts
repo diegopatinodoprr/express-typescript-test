@@ -1,7 +1,9 @@
 import * as express from 'express'
 import { Request, Response } from 'express'
+import IControllerBase from 'interfaces/IControllerBase.interface'
 
-class HomeController {
+
+class HomeController implements IControllerBase {
     public path = '/'
     public router = express.Router()
     
@@ -15,7 +17,22 @@ class HomeController {
 
     index = (req: Request, res: Response) => {
         
-        res.render('home/index', { })
+        const users = [
+            {
+                id: 1,
+                name: 'Ali'
+            },
+            {
+                id: 2,
+                name: 'Can'
+            },
+            {
+                id: 3,
+                name: 'Ahmet'
+            }
+        ]
+
+        res.render('home/index', { users })
     }
 }
 

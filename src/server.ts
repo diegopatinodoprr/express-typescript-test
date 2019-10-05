@@ -23,3 +23,4 @@ app.listen()
 
 // http://rousseau-alexandre.fr/en/programming/2019/06/19/express-typescript.html
 // https://wanago.io/2018/12/03/typescript-express-tutorial-routing-controllers-middleware/
+// https://www.tutorialsteacher.com/typescript
